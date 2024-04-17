@@ -1,5 +1,7 @@
 # Geospatial Analysis of Potential Apple Store Locations in New York City
 
+![apple store nyc](ny_apple.PNG)
+
 ## Description
 This project aims to identify suitable locations for opening new Apple Stores within the New York City area. It leverages geospatial coordinates and data from loopnet.com to analyze available retail rental spaces.
 
@@ -35,10 +37,9 @@ the most important files needed for our analysis are the following
    this file is needed to generate geospatial coordinates (latitude, longitude) given the addresses extracted from loopnet.com
    and apple.com. However, this step is only needed if there is a need of new locations to be converted as the file 'nyc_apple_stores_proj.ipymb' will work on its own since it relies on the .txt files in this folder.
 
-- 'locs_pipeline.py' this file contains takes an excel file as an input containing the variables needed to make predictions and
-  display all location with their suitability description on a web browser.
-  N.B. it is important that the 'nyc_apple_stores_proj.ipymb' file is ran before the pipeline since it is where all ML models are trained
-  and imported
+- 'locs_pipeline.py' this file contains methods that take an excel file as an input containing the variables needed to make new stores suitability predictions.
+  in order to use this file and display all location with their suitability description on a web browser the file 'pipeline_usage.py' is needed.
+  N.B. it is important to assure that the 'nyc_apple_stores_proj.ipymb' file is ran before the files in the pipeline folder since it is where all ML models are trained and imported into the pipeline
 
 ## Usage
 
@@ -63,8 +64,11 @@ the most important files needed for our analysis are the following
 
 - launch 'jupyter notebook' from your conda prompt in the 'base' environment
   
-- open 'nyc_apple_stores_proj.ipymb'.
+- open  and run 'nyc_apple_stores_proj.ipymb'.
 
+- for experimenting with new locations navigate to the /pipeline_files folder and run 'pipeline_usage.py' and feel free to add/replace
+  data in excel_csv_files/address_sample.csv
+     
 ## Output Description
 The script provided performs the following tasks:
 
