@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd8aa6b62f7a26c99095fa195f8ca01d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd8aa6b62f7a26c99095fa195f8ca01d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd8aa6b62f7a26c99095fa195f8ca01d = L.map(
+                "map_dd8aa6b62f7a26c99095fa195f8ca01d",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fdcaaa7c69c504ec3b04002d29938cfc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fdcaaa7c69c504ec3b04002d29938cfc.addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+            var marker_2b30d039b72b00647ada532edef3a80d = L.marker(
+                [40.5100142, -74.250841],
+                {}
+            ).addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+        var popup_138f7cc8794076c07ec5ddaddb5a883a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_170c45287ad0b908edaf6a7aaa1cfe0c = $(`<div id="html_170c45287ad0b908edaf6a7aaa1cfe0c" style="width: 100.0%; height: 100.0%;">Address: 104 Bentley St, Staten Island, NY 10307<br>Suitability: location suitable</div>`)[0];
+                popup_138f7cc8794076c07ec5ddaddb5a883a.setContent(html_170c45287ad0b908edaf6a7aaa1cfe0c);
+            
+        
+
+        marker_2b30d039b72b00647ada532edef3a80d.bindPopup(popup_138f7cc8794076c07ec5ddaddb5a883a)
+        ;
+
+        
+    
+    
+            var marker_5737df332a3e41ba556a2828ef2e2289 = L.marker(
+                [40.6428904, -73.93405259802852],
+                {}
+            ).addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+        var popup_33a8b77a7060a03b28b776f9a9f81300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_775f57b635070b898e4f5d4c1178e625 = $(`<div id="html_775f57b635070b898e4f5d4c1178e625" style="width: 100.0%; height: 100.0%;">Address: 753 E 45th St, Brooklyn, NY 11203<br>Suitability: additional info is needed</div>`)[0];
+                popup_33a8b77a7060a03b28b776f9a9f81300.setContent(html_775f57b635070b898e4f5d4c1178e625);
+            
+        
+
+        marker_5737df332a3e41ba556a2828ef2e2289.bindPopup(popup_33a8b77a7060a03b28b776f9a9f81300)
+        ;
+
+        
+    
+    
+            var marker_0534dc9a3c716180720f339568576702 = L.marker(
+                [40.844969863636365, -73.78606990909091],
+                {}
+            ).addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+        var popup_f51637088dca40dddbdf5e021f0d14a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bfca7663ea9de476bd3617ac5dc4fcd = $(`<div id="html_5bfca7663ea9de476bd3617ac5dc4fcd" style="width: 100.0%; height: 100.0%;">Address: 98 Schofield St , Bronx, NY 10464<br>Suitability: additional info is needed</div>`)[0];
+                popup_f51637088dca40dddbdf5e021f0d14a0.setContent(html_5bfca7663ea9de476bd3617ac5dc4fcd);
+            
+        
+
+        marker_0534dc9a3c716180720f339568576702.bindPopup(popup_f51637088dca40dddbdf5e021f0d14a0)
+        ;
+
+        
+    
+    
+            var marker_fe593a7ddc996b8bbb074743ec6c4ecf = L.marker(
+                [40.5786167, -73.94203659476963],
+                {}
+            ).addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+        var popup_7a37756c56bd1ce7bb472c40eda50f4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60861022c2350af113196b3d5c66ccc7 = $(`<div id="html_60861022c2350af113196b3d5c66ccc7" style="width: 100.0%; height: 100.0%;">Address: 182 Kensington St, Brooklyn, NY 11235<br>Suitability: location NOT suitable</div>`)[0];
+                popup_7a37756c56bd1ce7bb472c40eda50f4c.setContent(html_60861022c2350af113196b3d5c66ccc7);
+            
+        
+
+        marker_fe593a7ddc996b8bbb074743ec6c4ecf.bindPopup(popup_7a37756c56bd1ce7bb472c40eda50f4c)
+        ;
+
+        
+    
+    
+            var marker_c28564e94f30392249b25ce67377d6ac = L.marker(
+                [40.63228225, -74.03212292840192],
+                {}
+            ).addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+        var popup_5752e38fa9c168a4010035ee3c55de61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5264223eaa0dc298f086ad6a22243ffc = $(`<div id="html_5264223eaa0dc298f086ad6a22243ffc" style="width: 100.0%; height: 100.0%;">Address: 130 Bay Ridge Pkwy Brooklyn, NY 11209<br>Suitability: location suitable</div>`)[0];
+                popup_5752e38fa9c168a4010035ee3c55de61.setContent(html_5264223eaa0dc298f086ad6a22243ffc);
+            
+        
+
+        marker_c28564e94f30392249b25ce67377d6ac.bindPopup(popup_5752e38fa9c168a4010035ee3c55de61)
+        ;
+
+        
+    
+    
+            var marker_61ed3df5f3f2d5073484d5496984b8c6 = L.marker(
+                [40.7443882, -73.9494463],
+                {}
+            ).addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+        var popup_023d857a46ec15a6977ffa05fda9f5be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baa1eadd8b851a88f82950f6700be780 = $(`<div id="html_baa1eadd8b851a88f82950f6700be780" style="width: 100.0%; height: 100.0%;">Address: 1311 Jackson Ave, Long Island City, NY 11101<br>Suitability: additional info is needed</div>`)[0];
+                popup_023d857a46ec15a6977ffa05fda9f5be.setContent(html_baa1eadd8b851a88f82950f6700be780);
+            
+        
+
+        marker_61ed3df5f3f2d5073484d5496984b8c6.bindPopup(popup_023d857a46ec15a6977ffa05fda9f5be)
+        ;
+
+        
+    
+    
+            var marker_f65acb29bdb4eafacbca5ec2cfaeb221 = L.marker(
+                [40.89840744999999, -73.9105829530263],
+                {}
+            ).addTo(map_dd8aa6b62f7a26c99095fa195f8ca01d);
+        
+    
+        var popup_07bc1d7f5e696f2c58662e2f210b8de7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc9b417303fbf638023817eccedf45dc = $(`<div id="html_bc9b417303fbf638023817eccedf45dc" style="width: 100.0%; height: 100.0%;">Address: 4970 Independence Ave, Bronx, NY 10471<br>Suitability: additional info is needed</div>`)[0];
+                popup_07bc1d7f5e696f2c58662e2f210b8de7.setContent(html_bc9b417303fbf638023817eccedf45dc);
+            
+        
+
+        marker_f65acb29bdb4eafacbca5ec2cfaeb221.bindPopup(popup_07bc1d7f5e696f2c58662e2f210b8de7)
+        ;
+
+        
+    
+</script>
+</html>
