@@ -1,0 +1,8 @@
+zip_col_name: ZIP
+float_col_name: weighted_avg_income
+predictor_names:
+  - SF
+  - price_SF/YR
+  - year_built
+  - distance_to_closest_store
+  - avg_income
