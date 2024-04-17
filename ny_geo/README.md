@@ -33,7 +33,12 @@ the most important files needed for our analysis are the following
     this file contains data processing and machine lerning methods needed to make predictions on potential locations  
 - `geospatial_coords_generator.ipymb`
    this file is needed to generate geospatial coordinates (latitude, longitude) given the addresses extracted from loopnet.com
-   and apple.com. However, this step is only needed if there is a need of new locations to be converted as the file 'nyc_apple_stores_proj.ipymb' will work on its own since it relies on the .txt files in this folder.  
+   and apple.com. However, this step is only needed if there is a need of new locations to be converted as the file 'nyc_apple_stores_proj.ipymb' will work on its own since it relies on the .txt files in this folder.
+
+- 'locs_pipeline.py' this file contains takes an excel file as an input containing the variables needed to make predictions and
+  display all location with their suitability description on a web browser.
+  N.B. it is important that the 'nyc_apple_stores_proj.ipymb' file is ran before the pipeline since it is where all ML models are trained
+  and imported
 
 ## Usage
 
