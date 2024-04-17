@@ -1,5 +1,7 @@
 # Geospatial Analysis of Potential Apple Store Locations in New York City
 
+![apple store nyc](apple.png)
+
 ## Description
 This project aims to identify suitable locations for opening new Apple Stores within the New York City area. It leverages geospatial coordinates and data from loopnet.com to analyze available retail rental spaces.
 
