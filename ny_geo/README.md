@@ -31,15 +31,17 @@ which have been gathered by the following sources:
 
 ## Project Structure
 the most important files needed for our analysis are the following
-- nyc_apple_stores_proj.ipynb
+- `nyc_apple_stores_proj.ipynb`
     this file contains data processing and machine lerning methods needed to make predictions on potential locations  
 - `geospatial_coords_generator.ipymb`
    this file is needed to generate geospatial coordinates (latitude, longitude) given the addresses extracted from loopnet.com
    and apple.com. However, this step is only needed if there is a need of new locations to be converted as the file 'nyc_apple_stores_proj.ipymb' will work on its own since it relies on the .txt files in this folder.
 
-- 'locs_pipeline.py' this file contains methods that take an excel file as an input containing the variables needed to make new stores suitability predictions.
+- `locs_pipeline.py` this file contains methods that take an excel file as an input containing the variables needed to make new stores suitability predictions.
   in order to use this file and display all location with their suitability description on a web browser the file 'pipeline_usage.py' is needed.
   N.B. it is important to assure that the 'nyc_apple_stores_proj.ipymb' file is ran before the files in the pipeline folder since it is where all ML models are trained and imported into the pipeline
+
+`pipeline_usage.py` contains methods for automating the most important stages given the findings in `nyc_apple_stores_proj.ipynb`.
 
 ## Usage
 
